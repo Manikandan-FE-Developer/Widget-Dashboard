@@ -1,68 +1,78 @@
 # Widget Dashboard
 
-**Widget Dashboard** is a dynamic dashboard application that allows users to manage and customize their dashboard by adding and removing widgets. It features a responsive design, a sidebar for adding widgets, and local storage for persisting data.
+## Overview
+
+The **Widget Dashboard** is a dynamic and responsive dashboard application built with React. It allows users to manage widgets within categories, including adding and removing widgets. Widgets are organized into categories and are displayed in a grid layout that adjusts automatically as widgets are added or removed.
 
 ## Features
 
-- **Dynamic Widget Management**: Add, remove, and organize widgets within categories.
-- **Responsive Design**: Works seamlessly on various screen sizes.
-- **Local Storage**: Stores widget and category data locally in the browser.
+- **Dynamic Widget Addition**: Add widgets to specific categories with customizable names and descriptions.
+- **Responsive Layout**: Widgets automatically wrap to new rows when there is no space in the current row.
+- **Widget Management**: Easily remove widgets and manage categories.
+- **Sidebar for Widget Selection**: Use a sidebar to add widgets to the dashboard.
 
-## Getting Started
+## Technologies Used
 
-### Prerequisites
+- **React**: JavaScript library for building user interfaces.
+- **Bootstrap**: CSS framework for responsive design.
+- **CSS**: Styling the components.
 
-- Node.js (>= 14.x)
-- npm or yarn
+## Installation
 
-### Installation
-
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/YourUsername/widget-dashboard.git
-   cd widget-dashboard
+   git clone https://github.com/your-username/your-repository-name.git
    ```
 
-2. Install dependencies:
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd your-repository-name
+   ```
+
+3. **Install dependencies:**
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. Start the development server:
+## Usage
+
+1. **Start the development server:**
 
    ```bash
    npm start
-   # or
-   yarn start
    ```
 
-   The application will be available at [http://localhost:3000](http://localhost:3000).
+2. **Open your browser and navigate to:**
 
-### Usage
+   ```
+   http://localhost:3000
+   ```
 
-- **Adding Widgets**: Click the "Add Widget" button to open the sidebar. Fill in the widget details and add it to the selected category.
-- **Removing Widgets**: Use the cross icon on each widget to remove it from the category.
-- **Searching Widgets**: Utilize the search functionality to filter through widgets.
+3. **Interact with the dashboard:**
+   - Use the "Add Widget" button to open the sidebar and add new widgets.
+   - Widgets will appear in the selected category and wrap to new rows as needed.
+   - Remove widgets by clicking the close icon on each widget.
 
-### Project Structure
+## Folder Structure
 
-- `src/components/`: Contains React components such as `Dashboard`, `Category`, `Widget`, `AddWidget`, and `Sidebar`.
-- `src/dashboardData.json`: Contains the initial data structure for categories and widgets.
-- `src/App.js`: The main entry point of the application.
-- `src/index.js`: The entry point for React rendering.
+```
+/src
+  /components
+    - AddWidget.js
+    - Category.js
+    - Dashboard.js
+    - Sidebar.js
+    - Widget.js
+  /styles
+    - App.css
+  - App.js
+  - index.js
+  - dashboardData.json
+```
 
-### Local Storage Integration
-
-The application uses the browser’s local storage to persist categories and widgets data. This ensures that user changes are saved and maintained across page reloads.
-
-### Contributing
-
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
-### License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
