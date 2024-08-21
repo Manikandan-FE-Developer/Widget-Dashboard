@@ -22,13 +22,13 @@ The **Widget Dashboard** is a dynamic and responsive dashboard application built
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/your-username/Widget-Dashboard.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd your-repository-name
+   cd Widget-Dashboard
    ```
 
 3. **Install dependencies:**
@@ -66,9 +66,8 @@ The **Widget Dashboard** is a dynamic and responsive dashboard application built
     - Dashboard.js
     - Sidebar.js
     - Widget.js
-  /styles
-    - App.css
   - App.js
+  - App.css
   - index.js
   - dashboardData.json
 ```
