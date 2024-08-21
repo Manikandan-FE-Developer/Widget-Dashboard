@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #dbeefd;
+}
+h3, h4{
+  font-weight: bold;
+}
+/* Nav Bar */
+nav {
+  background-color: white;
+}
+nav .navLogo p{
+  color: gray;
+  font-weight: bold;
+}
+nav .navLogo i{
+  color: gray;
+  font-size: 15px; 
+}
+nav .navLogo span{
+  color: #1E2A5E;
+}
+.navSearch{
+  margin-top: 10px;
+}
+.navSearch input{
+  background-color: #dbeefd;
+}
+.navNotify, .navUser {
+  margin-top: 15px;
+}
+.navNotify i, .navUser i{
+  cursor: pointer;
+  font-size: 18px;
+  padding-right: 5px;
+}
+/* Dashboard */
+.dashboard-container .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+.dashboard-container .flex h3{
+  margin-left: 30px;
+}
+.dashboard-container .flex button{
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.747);
+  border-radius: 5px;
+}
+.dashboard-container .flex .fa-repeat{
+  rotate: 90deg;
+}
+.select-con {
+  position: relative;
+  display: inline-block;
+}
+.select-con i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.select-con select{
+  padding: 5px 10px 5px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-con::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.dashboard-container .body{
+  margin-left: 30px;
+}
+/* Category */
+.widget-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.addWidget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addWidget button{
+  padding: 5px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.747);
+  border-radius: 5px;
+}
+/* Widget */
+.widget, .addWidget{
+  margin: 25px 0;
+  width: 350px;
+  height: 160px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+.widget-header{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.widget p{
+  margin-left: 10px;
+}
+.widget i{
+  cursor: pointer;
+  font-size: 20px;
+}
+/* Add Widget Form */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup .popup-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+.popup h4{
+  text-align: center;
+  font-weight: bold;
+}
+.popup label{
+  padding: 10px 0;
+}
+.popup textarea{
+  resize: vertical;
+}
+.popup .buttons{
+  text-align: right;
+  padding-top: 10px;
+}
+.popup .buttons button{
+  margin: 10px;
+}
+.popup .fa-xmark {
+  float: right;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  right: -500px;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+.sidebar.open {
+  right: 0;
+}
+.sidebar-header{
+  width: 100%;
+  padding: 5px 10px;
+  color: white;
+  background-color: #1E2A5E;
+}
+.sidebar-header p{
+  font-weight: bold;
+  margin: 5px;
+}
+.sidebar-header .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin: -15px 5px 0 0;
+}
+.sidebar-body p{
+  padding: 10px 0 0 10px;
+}
+.sidebar-body ul{
+  padding-left: 10px;
+  list-style: none;
+  display: flex;
+}
+.sidebar-body hr{
+  margin: 0 0 10px 0;
+  border: 1px solid gray;
+}
+.sidebar-body li{
+  color: gray;
+  padding-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sidebar-body li:hover{
+  color: #1E2A5E;
+}
+.sidebar-body li.active{
+  color: #1E2A5E;
+}
+.sidebar-body label{
+  width: 100%;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.sidebar body input{
+  background-color: #1E2A5E;
+}
+.sidebar-footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.sidebar-footer button{
+  margin: 10px;
+  padding: 5px 15px;
+  border: 1px solid gray;
+}
+.sidebar-footer .btn-primary{
+  background-color: #1E2A5E;
+}
+.sidebar-footer .btn-secondary{
+  background-color: white;
+}
+/* Mobile Responsive */
+@media only screen and (max-width: 768px) {
+  /* Nav bar */
+  nav .navLogo p{
+    font-size: 16px;
+    margin-left: -10px;
+  }
+  .navNotify{
+    margin: -65px 60px 0 0;
+  }
+  .navUser {
+    margin: -20px -70px 0 0;
+  }
+  .navUser i{
+    font-size: 16px;
+  }
+  /* Dashboard */
+  .dashboard-container .flex{
+    margin: 50px 15px 0 0;
+  }
+  .dashboard-container .flex h3{
+    display: none;
+  }
+  .dashboard-container .flex button{
+    margin: 0 5px 0 0;
+    font-size: 10px;
+  }
+  .select-con {
+    font-size: 10px;
+  }
+  .dashboard-container .body{
+    margin: 15px;
+  }
+  /* Add Widget Form */
+  .popup .popup-content {
+    margin-left: 10px;
+    width: 280px;
+  }
+  .popup h4{
+    font-size: 14px;
+  }
+  /* Sidebar */
+  .sidebar {
+    right: -300px;
+    width: 300px;
+    margin-left: 0px;
+  }
+}
